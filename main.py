@@ -8,7 +8,8 @@ from database import (
     get_code, create_code, update_code, use_code
 )
 from config import ADMIN_ROLE_ID, TOKEN
-
+from keep_alive import keep_alive
+keep_alive()
 intents = discord.Intents.default()
 intents.message_content = True
 bot = commands.Bot(command_prefix="!", intents=intents)
